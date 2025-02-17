@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 5px;
+  text-align: center;
+  background-color: #c3dbd3;
+  display: flex;
+}
+.turn {
+  padding: 0.5rem;
+}
+.turn button {
+  padding: 0.8rem;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border-color: #c2ad86;
+}
+#turnX {
+  color: white;
+}
+#turnO {
+  color: black;
+}
+
+#reset {
+  background-color: #c2ad86;
+  color: black;
+  border-color: #c2ad86;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+.container {
+  width: 65vw;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: center;
+}
+h1 {
+  color: #9c5f74;
+}
+.game {
+  height: 68vmin;
+  width: 68vmin;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+.box {
+  border-radius: 1rem;
+  border-color: #c2ad86;
+  background-color: #baa2aa;
+  font-size: 4rem;
+}
+
+.score {
+  padding-top: 10rem;
+  padding-left: 5rem;
+}
+caption {
+  font-weight: 900;
+  font-size: larger;
+  margin: 1rem;
+}
+th {
+  font-weight: 500;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+.msg {
+  height: 70vmin;
+  width: 70vmin;
+  font-size: 3.5rem;
+  background-color: transparent;
+}
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100vw;
+  }
+  .score {
+    padding: 0;
+  }
+}
