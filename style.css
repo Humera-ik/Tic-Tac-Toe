@@ -95,6 +95,10 @@ td {
   .container {
     width: 100vw;
   }
+  .msg {
+    font-size: 2.5rem;
+    text-align: center;
+  }
   .score {
     padding: 0;
   }
